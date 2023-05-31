@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Playfair+Display+SC&display=swap");
+/*font-family: 'Cherry Bomb One', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Playfair+Display+SC&family=Rammetto+One&display=swap");
+/*font-family: 'Rammetto One', cursive;*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --cor1: #005956;
+  --cor2: #fff;
+  --cor3: #000;
+  --cor4: #00a8a2;
+  --cor5: rgba(255, 255, 255, 0.952);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #005956;
+}
+header {
+  background-color: var(--cor1);
+}
+header h1 {
+  text-align: center;
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 5rem;
+  color: var(--cor2);
+}
+nav {
+  background-color: var(--cor4);
+}
+nav a {
+  font-family: "Rammetto One", cursive;
+  text-transform: uppercase;
+  color: var(--cor5);
+  font-weight: lighter;
+  padding-left: 10px;
+  text-decoration: none;
+}
+main {
+  max-width: 1000px;
+  background: var(--cor2);
+  margin: auto;
+  padding: 20px;
+}
+.categorias img {
+  max-width: 300px;
+}
+.jogos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.categorias {
+  padding: 20px;
+}
+.conteiner-p {
+  position: relative;
+  background: #0000001d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.conteiner-p p::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: #00a8a2;
+  left: 5px;
+  top: 15px;
+}
