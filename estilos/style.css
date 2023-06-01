@@ -123,3 +123,13 @@ a p {
   left: 5px;
   top: 15px;
 }
+.conteiner-p p::after {
+  position: absolute;
+  content: "Quiz";
+  width: 55px;
+  height: 25px;
+  border-radius: 5px;
+  background: #00ff88e3;
+  right: 5px;
+  top: -40px;
+}
