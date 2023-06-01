@@ -6,6 +6,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 :root {
@@ -21,32 +22,70 @@ body {
 }
 header {
   background-color: var(--cor1);
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 header h1 {
   text-align: center;
   font-family: "Cherry Bomb One", cursive;
   font-size: 5rem;
   color: var(--cor2);
 }
+.title {
+  grid-column: 2;
+}
+.login {
+  grid-column: 3;
+  display: flex;
+  list-style-type: none;
+  place-self: end;
+}
+.login li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  color: var(--cor2);
+  font-size: 1rem;
+}
+.login a li:hover {
+  background: var(--cor4);
+  border-radius: 4px;
+}
 nav {
   background-color: var(--cor4);
+  grid-column: 1/-1;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style-type: none;
+  padding: 10px;
 }
 nav a {
   font-family: "Rammetto One", cursive;
   text-transform: uppercase;
   color: var(--cor5);
   font-weight: lighter;
-  padding-left: 10px;
   text-decoration: none;
+}
+nav a:hover {
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 4px;
 }
 main {
   max-width: 1000px;
   background: var(--cor2);
   margin: auto;
   padding: 20px;
+  border-radius: 2px;
+  height: 100vh;
 }
 .categorias img {
-  max-width: 300px;
+  max-width: 100%;
 }
 .jogos {
   display: grid;
@@ -55,6 +94,14 @@ main {
 .categorias {
   padding: 20px;
 }
+.categorias:hover {
+  box-shadow: 1px 1px 1px 2px var(--cor4);
+
+  border-radius: 4px;
+}
+.conteiner-p:hover {
+  background: var(--cor4);
+}
 .conteiner-p {
   position: relative;
   background: #0000001d;
@@ -62,13 +109,17 @@ main {
   border-radius: 10px;
   text-align: center;
 }
+a p {
+  color: var(--cor3);
+  font-size: 1.2rem;
+}
 .conteiner-p p::before {
   position: absolute;
   content: "";
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  background: #00a8a2;
+  background: var(--cor4);
   left: 5px;
   top: 15px;
 }

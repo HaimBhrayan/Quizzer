@@ -1,0 +1,51 @@
+@media (max-width: 1000px) {
+  .title {
+    grid-column: 1;
+  }
+}
+@media (max-width: 700px) {
+  .conteiner-p p::before {
+    width: initial;
+  }
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
+  nav li {
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  nav a:hover {
+    padding: 0px;
+  }
+  a p {
+    color: var(--cor3);
+    font-size: 1rem;
+  }
+}
+.login li {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 550px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  a p {
+    color: var(--cor3);
+    font-size: 0.8rem;
+  }
+  nav li {
+    font-size: 0.7rem;
+  }
+  .jogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .login li {
+    font-size: 0.8rem;
+    padding: 5px;
+    margin: 0px;
+  }
+}
